@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #F5F5F5;
+  background-color: #180F14;
+}
+
+@font-face {
+  font-family: 'KyivType Serif';
+  src: url('./fonts/kyivtype/KyivType-NoVariable/TTF/KyivTypeSerif-Bold3.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: 'KyivType Regular2';
+  src: url('./fonts/kyivtype/KyivType-NoVariable/TTF/KyivTypeSerif-Regular3.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: 'KyivType Sans';
+  src: url('./fonts/kyivtype/KyivType-NoVariable/TTF/KyivTypeSans-Regular-.ttf') format('truetype');
+}
+
+h2{
+  margin-top: 0;
+}
+
+.section-title {
+  z-index: 1;
+  position: relative;
+  top: 6.3vw;
+  margin-left: 3vw;
+  color: white;
+  font-size: 5.5vw;
+  font-family: 'KyivType Regular2', serif;
+}
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 10vw; 
+    margin-left: 5vw;
+    top: 11.5vw; 
+  }
+}

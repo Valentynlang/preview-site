@@ -1,0 +1,152 @@
+.signup-container {
+  display: flex; 
+  flex-direction: column; 
+  margin-right: 2vw; 
+}
+
+.signup-list {
+  margin-top: 12vw;
+}
+
+.signup-content {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+.background-image {
+  background-image: url('../public/sign-up-img.webp');
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  height: 90vh; 
+}
+
+.overlay {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background-color: rgba(38, 31, 35, 0.7); 
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-button {
+  position: relative;
+  top: -4vw;
+  margin-left: 56vw;
+  max-width: fit-content;
+  padding: 1.8vw 9vw;
+  font-size: 2.5rem;
+  color: #261F23;
+  background-color: rgba(245, 245, 245, 0.6);
+  border: 2px solid #261F23;
+  cursor: pointer;
+  font-family: 'KyivType Regular2', serif;
+  text-decoration: underline 0.1vw;
+  text-underline-offset: 0.3vw;
+}
+
+.signup-button:hover {
+  background-color: rgba(245, 245, 245, 0.8); 
+}
+
+.list-item {
+  margin-left: 2vw;
+  font-family: 'Bitter', serif; 
+  font-size: 2vw;
+  margin-bottom: 3vw;
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    margin-right: 0;
+    margin-top: 1vh;
+  }
+
+  .signup-content {
+    height: auto;
+  }
+
+  .background-image {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .overlay {
+    position: relative;
+    top: 2rem;
+    padding: 0.5rem;
+    padding-top: 3rem;
+    padding-bottom: 4.2rem;
+  }
+
+  .signup-button {
+    top: 5vw;
+    margin-left: 11vw;
+    padding: 3vw 18vw;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .list-item {
+    margin-top: 1rem;
+    font-size: 4.3vw;
+    margin-left: 0rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .signup-list {
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .signup-container {
+    margin-right: 0;
+    margin-top: 1vh;
+  }
+
+  .signup-content {
+    height: auto;
+  }
+
+  .background-image {
+    width: 100%;
+    height: 80vh;
+  }
+
+  .overlay {
+    position: relative;
+    top: 2rem;
+    padding: 0.5rem;
+    padding-top: 6vh;
+    padding-bottom: 5vh;
+  }
+
+  .signup-button {
+    top: 3.2vh;
+    margin-left: 8vw;
+    padding: 4vw 18vw;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .list-item {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    margin-left: 1vw;
+    margin-bottom: 1.5rem;
+  }
+
+  .signup-list {
+    margin-top: 0;
+    padding: 0 1rem;
+  }
+}

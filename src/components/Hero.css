@@ -1,0 +1,55 @@
+.hero-container {
+  position: relative;
+  background: url('../public/hero-img.webp') center/cover no-repeat; 
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.hero-content {
+  margin-top: 15vh;
+}
+
+.hero-title {
+  margin: 0 12vw; 
+  font-size: 12vh; 
+  font-weight: 700; 
+  font-family: 'KyivType Serif', serif;
+}
+
+.hero-description {
+  margin: 17vh 0 0 48vw; 
+  font-size: 3.5vh; 
+  font-family: 'Bitter', serif; 
+  max-width: 40%;
+  text-align: left; 
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    align-items: flex-start;
+    background-position: 70% center; 
+  }
+
+  .hero-content {
+    margin-top: 35vh;
+  }
+
+  .hero-title {
+    text-align: left;
+    margin: 0 0.5vw; 
+    padding: 1vh;
+    font-size: 11vw;
+  }
+
+  .hero-description {
+    margin: 8vh 0 0 0.5vw; 
+    padding: 1rem;
+    font-size: 5vw;
+    max-width: 100%;
+    text-align: left;
+  }
+}

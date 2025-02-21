@@ -12,7 +12,7 @@ export default function AboutMe() {
       <h2 className="section-title">Обо мне</h2>
       <div className="about-me-container">
         <div className="left-block">
-          <img src="../public/about-me-img.webp" alt="About Me" className="about-image" />
+          <img src="/about-me-img.webp" alt="About Me" className="about-image" />
         </div>
         <div className="right-block">
           {textSections.map((section, index) => (

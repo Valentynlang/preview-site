@@ -22,7 +22,7 @@ const Modal = ({ isOpen, onClose, title, content, format, price }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-          <img onClick={onClose} className="close-button" src="../public/close-x-10324.svg" alt="Close" />
+          <img onClick={onClose} className="close-button" src="/close-x-10324.svg" alt="Close" />
         <div className='text-area'>
           <p className='text-line-title'>{title}</p>
           <p className='text-line'>{content}</p>

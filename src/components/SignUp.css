@@ -15,7 +15,7 @@
 }
 
 .background-image {
-  background-image: url('../public/sign-up-img.webp');
+  background-image: url('/sign-up-img.webp');
   background-size: cover;
   background-position: center;
   width: 60%;

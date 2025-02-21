@@ -4,7 +4,7 @@
 
 .services-container {
   position: relative;
-  background-image: url('../public/services-bg.webp');
+  background-image: url('/services-bg.webp');
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -26,7 +26,7 @@
 }
 
 .service-item-container {
-  background-image: url('../public/services-img.webp');
+  background-image: url('/services-img.webp');
   background-size: cover;
   background-position: center;
   width: 19vw;
@@ -34,7 +34,7 @@
 }
 
 .service-item-container:hover {
-  background-image: url('../public/services-img-hover.webp');
+  background-image: url('/services-img-hover.webp');
   cursor: pointer;
 }
 

@@ -3,11 +3,21 @@ import './Modal.css';
 const Modal = ({ isOpen, onClose, title, content, format, price }) => {
   if (!isOpen) return null;
 
+  const renderPrice = () => {
+    if (Array.isArray(price) && price.length > 0) {
+      return price.map((p, index) => (
+        <div key={index}>
+          <p className='price-section'>{p.price}</p>
+        </div>
+      ));
+    }
+    return <p>{price}</p>;
+  };
   const renderFormat = () => {
     if (Array.isArray(format) && format.length > 0) {
       return format.map((f, index) => (
         <div key={index}>
-          <h4>{f.title}</h4>
+          <p>{f.title}</p>
           <ul>
             {f.list.map((item, idx) => (
               <li key={idx}>{item.item}</li>
@@ -27,7 +37,9 @@ const Modal = ({ isOpen, onClose, title, content, format, price }) => {
           <p className='text-line-title'>{title}</p>
           <p className='text-line'>{content}</p>
           {renderFormat()}
-          <p className='price-section'>{price}</p>
+          <div className='price-section-container'>
+            {renderPrice()}
+          </div>
         </div>
       </div>
     </div>

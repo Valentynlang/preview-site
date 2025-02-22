@@ -10,13 +10,15 @@
   display: flex; 
   justify-content: center; 
   align-items: center; 
+  overflow: auto;
 }
 
-.modal-content {
+.modal-content { 
   font-size: 1.4rem;
   max-width: 70%;
+  max-height: 90vh;
   background-color: #261F23; 
-  padding: 4rem 5rem; 
+  padding: 1rem 2rem 2rem; 
   border-radius: 28px; 
   border: 1px solid white;
   position: relative; 
@@ -24,8 +26,19 @@
   flex-direction: column;
   font-family: 'Bitter', serif;
   font-weight: 200;
+  text-transform: lowercase; 
 }
 
+.text-line-title {
+  font-weight: 600;
+}
+
+.price-section-container {
+  padding-bottom: 0.2rem;
+}
+.price-section {
+  margin: 0.1rem 0;
+}
 .close-button {
   background: none;
   border: none;
@@ -38,11 +51,9 @@
   filter: brightness(0) invert(1); 
 } 
 
-.price-section {
-  max-width: 45%;
-}
 
 .text-area {
+  overflow: auto;
   display: flex;
   flex-direction: column;
   flex-grow: 1; 
@@ -75,7 +86,6 @@
 
   .price-section {
     font-size: 0.9rem;
-    max-width: 84%; 
   }
 
   .text-line {

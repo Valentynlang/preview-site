@@ -7,6 +7,9 @@
   align-items: center; 
   text-align: center; 
 }
+.mobile-only {
+  display: none;
+}
 
 .hero-content {
   margin-top: 15vh;
@@ -28,10 +31,26 @@
   font-weight: 500;
 }
 
+.style-mobile {
+  display: none;
+}
+.mobile-only {
+  display: inline;
+}
 @media (max-width: 768px) {
   .hero-container {
+    background: url("/hero-mob.webp") center/cover no-repeat; 
     align-items: flex-start;
     background-position: 70% center; 
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .style-mobile {
+    margin-top: 1rem;
+    display: block;
   }
 
   .hero-content {
@@ -40,16 +59,18 @@
 
   .hero-title {
     text-align: left;
-    margin: 0 0.5vw; 
+    margin: 0 0.5vw 0 1vh; 
     padding: 1vh;
-    font-size: 11vw;
+    font-size: 8vw;
   }
 
   .hero-description {
-    margin: 8vh 0 0 0.5vw; 
-    padding: 1rem;
-    font-size: 5vw;
+    margin: 8vh 0 0 24vw; 
+    padding: 0.3vh;
+    font-size: 4.5vw;
     max-width: 100%;
     text-align: left;
   }
+
+
 }

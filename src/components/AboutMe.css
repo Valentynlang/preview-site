@@ -12,27 +12,30 @@
 
 .left-block {
   width: 50%;
-  height: 100vh; 
+  height: fit-content; 
   display: flex;
   align-items: center;
 }
 
+
 .about-image {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+  max-height: 100%;
 }
 
 .right-block {
-  margin-top: 3vh;
+  margin-top: 6vh;
   width: 50%;
   max-width: 55%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .text-section {
-  margin: 2.5vw 9.7rem 0 2rem;
+  margin: 3vw 9.7rem 0 2rem;
   font-size: 2vw;
   font-family: 'Bitter', serif;
   font-weight: 300;
@@ -64,7 +67,9 @@
   }
 
   .about-image {
-    width: 100%;
+    max-width: 100%;
+    height: 90vh;
+    object-fit: cover;
   }
 
   .text-section {

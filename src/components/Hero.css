@@ -34,7 +34,7 @@
 .style-mobile {
   display: none;
 }
-.mobile-only {
+.display-only {
   display: inline;
 }
 @media (max-width: 768px) {
@@ -44,7 +44,7 @@
     background-position: 70% center; 
   }
 
-  .mobile-only {
+  .display-only {
     display: none;
   }
 

@@ -66,6 +66,9 @@
     margin: 0 0.5vw 0 1vh; 
     padding: 1vh;
     font-size: 7.8vw;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
   }
 
   .hero-description {

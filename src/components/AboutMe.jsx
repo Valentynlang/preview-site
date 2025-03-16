@@ -15,8 +15,8 @@ export default function AboutMe() {
 
     return (
         <div className="about-me-section">
-            <h2 className="section-title">Обо мне</h2>
-            <div id="AboutMe" className="about-me-container">
+            <h2 id="AboutMe" className="section-title">Обо мне</h2>
+            <div className="about-me-container">
                 <div className="left-block">
                     <img
                         src="/about-me-img.webp"

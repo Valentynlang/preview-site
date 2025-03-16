@@ -1,98 +1,97 @@
 .modal-overlay {
-  z-index: 10;
-  position: fixed; 
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7); 
-  backdrop-filter: blur(5px); 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  overflow: auto;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
 }
 
-.modal-content { 
-  font-size: 1.4rem;
-  max-width: 70%;
-  max-height: 90vh;
-  background-color: #261F23; 
-  padding: 1rem 2rem 2rem; 
-  border-radius: 28px; 
-  border: 1px solid white;
-  position: relative; 
-  display: flex;
-  flex-direction: column;
-  font-family: 'Bitter', serif;
-  font-weight: 200;
-  text-transform: lowercase; 
+.modal-content {
+    font-size: 1.4rem;
+    max-width: 70%;
+    max-height: 90vh;
+    background-color: #261f23;
+    padding: 1rem 2rem 2rem;
+    border-radius: 28px;
+    border: 1px solid white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bitter', serif;
+    font-weight: 200;
+    text-transform: lowercase;
 }
 
 .text-line-title {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .price-section-container {
-  padding-bottom: 0.2rem;
+    padding-bottom: 0.2rem;
 }
 .price-section {
-  margin: 0.1rem 0;
+    margin: 0.1rem 0;
 }
 .close-button {
-  background: none;
-  border: none;
-  position: absolute; 
-  top: 25px;
-  right: 23px;
-  height: 2.1vw;
-  width: 2.1vw;
-  cursor: pointer; 
-  filter: brightness(0) invert(1); 
-} 
-
+    background: none;
+    border: none;
+    position: absolute;
+    top: 25px;
+    right: 23px;
+    height: 2.1vw;
+    width: 2.1vw;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
 
 .text-area {
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1; 
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .text-line {
-  flex-grow: 1; 
-  display: flex;
-  max-width: 90%;
+    flex-grow: 1;
+    display: flex;
+    max-width: 90%;
 }
 
 @media (max-width: 768px) {
-  .close-button {
-    top: 20px;
-    right: 18px;
-    height: 4.6vw;
-    width: 4.6vw;
-  } 
+    .close-button {
+        top: 20px;
+        right: 18px;
+        height: 4.6vw;
+        width: 4.6vw;
+    }
 
-  .modal-content {
-    max-height: 80%;
-    max-width: 90%; 
-    padding: 1rem; 
-    font-size: 1rem; 
-  }
+    .modal-content {
+        max-height: 80%;
+        max-width: 90%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
 
-  .close-button {
-    font-size: 2.5rem; 
-  }
+    .close-button {
+        font-size: 2.5rem;
+    }
 
-  .price-section {
-    font-size: 0.9rem;
-  }
+    .price-section {
+        font-size: 0.9rem;
+    }
 
-  .text-line {
-    max-width: 100%; 
-  }
+    .text-line {
+        max-width: 100%;
+    }
 
-  .text-area {
-    overflow: auto;
-  }
+    .text-area {
+        overflow: auto;
+    }
 }

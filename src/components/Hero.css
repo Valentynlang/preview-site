@@ -86,8 +86,14 @@
     .arrow {
         display: inline;
         width: auto;
-        height: 55vw;
+        height: 50vw;
         margin-left: 22vw;
         margin-top: 5vh;
+    }
+}
+
+@media (max-width: 370px)  {
+    .arrow {
+        height: 38vw;
     }
 }

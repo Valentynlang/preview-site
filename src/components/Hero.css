@@ -86,14 +86,14 @@
     .arrow {
         display: inline;
         width: auto;
-        height: 50vw;
+        height: 40vw;
         margin-left: 22vw;
-        margin-top: 5vh;
+        margin-top: 3vh;
     }
 }
 
 @media (max-width: 370px)  {
     .arrow {
-        height: 38vw;
+        height: 28vw;
     }
 }

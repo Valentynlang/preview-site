@@ -1,20 +1,19 @@
-import Hero from './components/Hero'
-import AboutMe from './components/AboutMe'
-import Services from './components/Services'
-import SignUp from './components/SignUp'
-import MoreInfo from './components/MoreInfo'
+import Hero from './components/Hero';
+import AboutMe from './components/AboutMe';
+import Services from './components/Services';
+import SignUp from './components/SignUp';
+import MoreInfo from './components/MoreInfo';
 
 function App() {
-
-  return (
-    <>
-    <Hero />
-    <AboutMe />
-    <Services />
-    <SignUp />
-    <MoreInfo />
-    </>
-  )
+    return (
+        <>
+            <Hero />
+            <AboutMe />
+            <Services />
+            <SignUp />
+            <MoreInfo />
+        </>
+    );
 }
 
-export default App
+export default App;

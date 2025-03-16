@@ -1,83 +1,93 @@
 .hero-container {
-  position: relative;
-  background: url("/hero-img.webp") center/cover no-repeat; 
-  height: 100vh; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  text-align: center; 
+    position: relative;
+    background: url('/hero-img.webp') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .mobile-only {
-  display: none;
+    display: none;
 }
 
 .hero-content {
-  margin-top: 15vh;
+    margin-top: 15vh;
 }
 
 .hero-title {
-  margin: 0 12vw; 
-  font-size: 12vh; 
-  font-weight: 700; 
-  font-family: 'KyivType Serif', serif;
+    margin: 0 12vw;
+    font-size: 12vh;
+    font-weight: 700;
+    font-family: 'KyivType Serif', serif;
 }
 
 .hero-description {
-  margin: 17vh 0 0 48vw; 
-  font-size: 3.5vh; 
-  font-family: 'Bitter', serif; 
-  max-width: 40%;
-  text-align: left; 
-  font-weight: 500;
+    margin: 17vh 0 0 48vw;
+    font-size: 3.5vh;
+    font-family: 'Bitter', serif;
+    max-width: 40%;
+    text-align: left;
+    font-weight: 500;
 }
 
 .style-mobile {
-  display: none;
+    display: none;
 }
 .display-only {
-  display: inline;
-}
-@media (max-width: 768px) {
-  .hero-container {
-    background: url("/hero-mob.webp") center/cover no-repeat; 
-    align-items: flex-start;
-    background-position: 70% center; 
-  }
-
-  .mobile-only {
     display: inline;
-  }
-
-  .display-only {
+}
+.arrow {
     display: none;
-  }
+}
 
-  .style-mobile {
-    margin-top: 1rem;
-    display: block;
-  }
+@media (max-width: 768px) {
+    .hero-container {
+        background: url('/hero-mob.webp') center/cover no-repeat;
+        align-items: flex-start;
+        background-position: 70% center;
+    }
 
-  .hero-content {
-    margin-top: 35vh;
-  }
+    .mobile-only {
+        display: inline;
+    }
 
-  .hero-title {
-    text-align: left;
-    margin: 0 0.5vw 0 1vh; 
-    padding: 1vh;
-    font-size: 7.5vw;
-    white-space: nowrap;
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-  }
+    .display-only {
+        display: none;
+    }
 
-  .hero-description {
-    margin: 8vh 0 0 24vw; 
-    padding: 0.3vh;
-    font-size: 4.5vw;
-    max-width: 100%;
-    text-align: left;
-  }
+    .style-mobile {
+        margin-top: 1rem;
+        display: block;
+    }
 
+    .hero-content {
+        margin-top: 35vh;
+    }
 
+    .hero-title {
+        text-align: left;
+        margin: 0 0.5vw 0 1vh;
+        padding: 1vh;
+        font-size: 7.5vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .hero-description {
+        margin: 8vh 0 0 24vw;
+        padding: 0.3vh;
+        font-size: 4.5vw;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .arrow {
+        display: inline;
+        width: auto;
+        height: 55vw;
+        margin-left: 22vw;
+        margin-top: 5vh;
+    }
 }
